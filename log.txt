@@ -1,0 +1,258 @@
+yarn run v1.22.21
+$ yarn workspace website build:fast
+$ cross-env BUILD_FAST=true yarn build --locale en
+$ cross-env RSPACK_CONFIG_VALIDATE=loose-silent docusaurus build --locale en
+[INFO] [en] Creating an optimized production build...
+[WARNING] Rspack does not support ContextReplacementPlugin, and Prism syntax highlighter will not be optimized
+[WARNING] Rspack does not support ContextReplacementPlugin, and Prism syntax highlighter will not be optimized
+name: undefined
+runtidme dchunk
+webpack: <ref *1> [Function: rspack] {
+  rspackVersion: '1.0.5',
+  version: '5.75.0',
+  Compilation: [class Compilation] {
+    PROCESS_ASSETS_STAGE_ADDITIONAL: -2000,
+    PROCESS_ASSETS_STAGE_PRE_PROCESS: -1000,
+    PROCESS_ASSETS_STAGE_DERIVED: -200,
+    PROCESS_ASSETS_STAGE_ADDITIONS: -100,
+    PROCESS_ASSETS_STAGE_NONE: 0,
+    PROCESS_ASSETS_STAGE_OPTIMIZE: 100,
+    PROCESS_ASSETS_STAGE_OPTIMIZE_COUNT: 200,
+    PROCESS_ASSETS_STAGE_OPTIMIZE_COMPATIBILITY: 300,
+    PROCESS_ASSETS_STAGE_OPTIMIZE_SIZE: 400,
+    PROCESS_ASSETS_STAGE_DEV_TOOLING: 500,
+    PROCESS_ASSETS_STAGE_OPTIMIZE_INLINE: 700,
+    PROCESS_ASSETS_STAGE_SUMMARIZE: 1000,
+    PROCESS_ASSETS_STAGE_OPTIMIZE_HASH: 2500,
+    PROCESS_ASSETS_STAGE_OPTIMIZE_TRANSFER: 3000,
+    PROCESS_ASSETS_STAGE_ANALYSE: 4000,
+    PROCESS_ASSETS_STAGE_REPORT: 5000
+  },
+  Compiler: [class Compiler],
+  MultiCompiler: [class MultiCompiler],
+  RspackOptionsApply: [class RspackOptionsApply],
+  WebpackOptionsApply: [class RspackOptionsApply],
+  MultiStats: [class MultiStats],
+  NormalModule: [class NormalModule],
+  RuntimeGlobals: {
+    require: '__webpack_require__',
+    requireScope: '__webpack_require__.*',
+    exports: '__webpack_exports__',
+    thisAsExports: 'top-level-this-exports',
+    returnExportsFromRuntime: 'return-exports-from-runtime',
+    module: 'module',
+    moduleId: 'module.id',
+    moduleLoaded: 'module.loaded',
+    publicPath: '__webpack_require__.p',
+    entryModuleId: '__webpack_require__.s',
+    moduleCache: '__webpack_require__.c',
+    moduleFactories: '__webpack_require__.m',
+    moduleFactoriesAddOnly: '__webpack_require__.m (add only)',
+    ensureChunk: '__webpack_require__.e',
+    ensureChunkHandlers: '__webpack_require__.f',
+    ensureChunkIncludeEntries: '__webpack_require__.f (include entries)',
+    prefetchChunk: '__webpack_require__.E',
+    prefetchChunkHandlers: '__webpack_require__.F',
+    preloadChunk: '__webpack_require__.G',
+    preloadChunkHandlers: '__webpack_require__.H',
+    definePropertyGetters: '__webpack_require__.d',
+    makeNamespaceObject: '__webpack_require__.r',
+    createFakeNamespaceObject: '__webpack_require__.t',
+    compatGetDefaultExport: '__webpack_require__.n',
+    harmonyModuleDecorator: '__webpack_require__.hmd',
+    nodeModuleDecorator: '__webpack_require__.nmd',
+    getFullHash: '__webpack_require__.h',
+    wasmInstances: '__webpack_require__.w',
+    instantiateWasm: '__webpack_require__.v',
+    uncaughtErrorHandler: '__webpack_require__.oe',
+    scriptNonce: '__webpack_require__.nc',
+    loadScript: '__webpack_require__.l',
+    createScript: '__webpack_require__.ts',
+    createScriptUrl: '__webpack_require__.tu',
+    getTrustedTypesPolicy: '__webpack_require__.tt',
+    hasFetchPriority: 'has fetch priority',
+    chunkName: '__webpack_require__.cn',
+    runtimeId: '__webpack_require__.j',
+    getChunkScriptFilename: '__webpack_require__.u',
+    getChunkCssFilename: '__webpack_require__.k',
+    hasCssModules: 'has css modules',
+    getChunkUpdateScriptFilename: '__webpack_require__.hu',
+    getChunkUpdateCssFilename: '__webpack_require__.hk',
+    startup: '__webpack_require__.x',
+    startupNoDefault: '__webpack_require__.x (no default handler)',
+    startupOnlyAfter: '__webpack_require__.x (only after)',
+    startupOnlyBefore: '__webpack_require__.x (only before)',
+    chunkCallback: 'webpackChunk',
+    startupEntrypoint: '__webpack_require__.X',
+    onChunksLoaded: '__webpack_require__.O',
+    externalInstallChunk: '__webpack_require__.C',
+    interceptModuleExecution: '__webpack_require__.i',
+    global: '__webpack_require__.g',
+    shareScopeMap: '__webpack_require__.S',
+    initializeSharing: '__webpack_require__.I',
+    currentRemoteGetScope: '__webpack_require__.R',
+    getUpdateManifestFilename: '__webpack_require__.hmrF',
+    hmrDownloadManifest: '__webpack_require__.hmrM',
+    hmrDownloadUpdateHandlers: '__webpack_require__.hmrC',
+    hmrModuleData: '__webpack_require__.hmrD',
+    hmrInvalidateModuleHandlers: '__webpack_require__.hmrI',
+    hmrRuntimeStatePrefix: '__webpack_require__.hmrS',
+    amdDefine: '__webpack_require__.amdD',
+    amdOptions: '__webpack_require__.amdO',
+    system: '__webpack_require__.System',
+    hasOwnProperty: '__webpack_require__.o',
+    systemContext: '__webpack_require__.y',
+    baseURI: '__webpack_require__.b',
+    relativeUrl: '__webpack_require__.U',
+    asyncModule: '__webpack_require__.a'
+  },
+  Stats: [class Stats],
+  RuntimeModule: [class RuntimeModule] {
+    STAGE_NORMAL: 0,
+    STAGE_BASIC: 5,
+    STAGE_ATTACH: 10,
+    STAGE_TRIGGER: 20
+  },
+  ModuleFilenameHelpers: {
+    asRegExp: [Function: asRegExp],
+    matchPart: [Function: matchPart],
+    matchObject: [Function: matchObject]
+  },
+  Template: [class Template],
+  WebpackError: [Function: Error] { stackTraceLimit: 10 },
+  sources: {},
+  config: {
+    getNormalizedRspackOptions: [Function: getNormalizedRspackOptions],
+    applyRspackOptionsDefaults: [Function: applyRspackOptionsDefaults],
+    getNormalizedWebpackOptions: [Function: getNormalizedRspackOptions],
+    applyWebpackOptionsDefaults: [Function: applyRspackOptionsDefaults]
+  },
+  ValidationError: [class ValidationError extends Error],
+  util: {
+    createHash: [Function: createHash],
+    cleverMerge: [Function: cachedCleverMerge]
+  },
+  EntryOptionPlugin: [class EntryOptionPlugin],
+  BannerPlugin: [class BannerPlugin extends RspackBuiltinPlugin],
+  IgnorePlugin: [class IgnorePlugin extends RspackBuiltinPlugin],
+  ProvidePlugin: [class ProvidePlugin extends RspackBuiltinPlugin],
+  DefinePlugin: [class DefinePlugin extends RspackBuiltinPlugin],
+  ProgressPlugin: [class ProgressPlugin extends RspackBuiltinPlugin],
+  EntryPlugin: [class EntryPlugin extends RspackBuiltinPlugin],
+  DynamicEntryPlugin: [class DynamicEntryPlugin extends RspackBuiltinPlugin],
+  ExternalsPlugin: [class ExternalsPlugin extends RspackBuiltinPlugin],
+  HotModuleReplacementPlugin: [class HotModuleReplacementPlugin extends RspackBuiltinPlugin],
+  NoEmitOnErrorsPlugin: [class NoEmitOnErrorsPlugin extends RspackBuiltinPlugin],
+  EnvironmentPlugin: [class EnvironmentPlugin],
+  LoaderOptionsPlugin: [class LoaderOptionsPlugin],
+  LoaderTargetPlugin: [class LoaderTargetPlugin],
+  NormalModuleReplacementPlugin: [class NormalModuleReplacementPlugin],
+  web: {
+    FetchCompileAsyncWasmPlugin: [class FetchCompileAsyncWasmPlugin extends RspackBuiltinPlugin]
+  },
+  node: {
+    NodeTargetPlugin: [class NodeTargetPlugin extends RspackBuiltinPlugin],
+    NodeTemplatePlugin: [class NodeTemplatePlugin],
+    NodeEnvironmentPlugin: [class NodeEnvironmentPlugin]
+  },
+  electron: {
+    ElectronTargetPlugin: [class ElectronTargetPlugin extends RspackBuiltinPlugin]
+  },
+  library: {
+    EnableLibraryPlugin: [class EnableLibraryPlugin extends RspackBuiltinPlugin]
+  },
+  wasm: {
+    EnableWasmLoadingPlugin: [class EnableWasmLoadingPlugin extends RspackBuiltinPlugin]
+  },
+  javascript: {
+    EnableChunkLoadingPlugin: [class EnableChunkLoadingPlugin extends RspackBuiltinPlugin],
+    JavascriptModulesPlugin: [class JavascriptModulesPlugin extends RspackBuiltinPlugin]
+  },
+  webworker: {
+    WebWorkerTemplatePlugin: [class WebWorkerTemplatePlugin extends RspackBuiltinPlugin]
+  },
+  optimize: {
+    LimitChunkCountPlugin: [class LimitChunkCountPlugin extends RspackBuiltinPlugin],
+    RuntimeChunkPlugin: [class RuntimeChunkPlugin extends RspackBuiltinPlugin],
+    SplitChunksPlugin: [class SplitChunksPlugin extends RspackBuiltinPlugin]
+  },
+  container: {
+    ContainerPlugin: [class ContainerPlugin extends RspackBuiltinPlugin],
+    ContainerReferencePlugin: [class ContainerReferencePlugin extends RspackBuiltinPlugin],
+    ModuleFederationPlugin: [class ModuleFederationPlugin],
+    ModuleFederationPluginV1: [class ModuleFederationPluginV1]
+  },
+  sharing: {
+    ProvideSharedPlugin: [class ProvideSharedPlugin extends RspackBuiltinPlugin],
+    ConsumeSharedPlugin: [class ConsumeSharedPlugin extends RspackBuiltinPlugin],
+    SharePlugin: [class SharePlugin]
+  },
+  HtmlRspackPlugin: [class HtmlRspackPlugin extends RspackBuiltinPlugin] {
+    createHtmlTagObject: [Function (anonymous)],
+    getCompilationOptions: [Function (anonymous)],
+    getCompilationHooks: [Function (anonymous)]
+  },
+  SwcJsMinimizerRspackPlugin: [class SwcJsMinimizerRspackPlugin extends RspackBuiltinPlugin],
+  LightningCssMinimizerRspackPlugin: [class LightningCssMinimizerRspackPlugin extends RspackBuiltinPlugin],
+  CopyRspackPlugin: [class CopyRspackPlugin extends RspackBuiltinPlugin],
+  SourceMapDevToolPlugin: [class SourceMapDevToolPlugin extends RspackBuiltinPlugin],
+  EvalSourceMapDevToolPlugin: [class EvalSourceMapDevToolPlugin extends RspackBuiltinPlugin],
+  EvalDevToolModulePlugin: [class EvalDevToolModulePlugin extends RspackBuiltinPlugin],
+  CssExtractRspackPlugin: [class CssExtractRspackPlugin] {
+    pluginName: 'css-extract-rspack-plugin',
+    loader: '/Users/bytedance/github/rspack/packages/rspack/dist/builtin-plugin/css-extract/loader.js'
+  },
+  ContextReplacementPlugin: [class ContextReplacementPlugin extends RspackBuiltinPlugin],
+  experiments: {
+    globalTrace: {
+      register: [Function: registerGlobalTrace],
+      cleanup: [Function: cleanupGlobalTrace]
+    }
+  },
+  rspack: [Circular *1],
+  webpack: [Circular *1]
+}
+DebugInfo:
+
+[1m[33mcontext[0m: /Users/bytedance/project/docusaurus/website
+
+Panic occurred at runtime. Please file an issue on GitHub with the backtrace below: https://github.com/web-infra-dev/rspack/issues
+Message:  Chunk(ChunkUkey(Ukey(0), PhantomData<rspack_core::chunk::Chunk>)) not found in ChunkGroup: Database
+Location: /Users/bytedance/github/rspack/crates/rspack_collections/src/ukey.rs:151
+
+Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
+Run with RUST_BACKTRACE=full to include source snippets.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ BACKTRACE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                              ⋮ 15 frames hidden ⋮                              
+16: <rspack_collections[341adc2173b42a8f]::ukey::Database<rspack_core[b7a8b1cc1d0b81c9]::chunk::Chunk>>::expect_get::{closure#0}
+    at /Users/bytedance/github/rspack/crates/rspack_collections/src/ukey.rs:151
+                               ⋮ 1 frame hidden ⋮                               
+18: <rspack_collections[341adc2173b42a8f]::ukey::Database<rspack_core[b7a8b1cc1d0b81c9]::chunk::Chunk>>::expect_get
+    at /Users/bytedance/github/rspack/crates/rspack_collections/src/ukey.rs:148
+19: <rspack_core[b7a8b1cc1d0b81c9]::compiler::compilation::Compilation>::add_runtime_module
+    at /Users/bytedance/github/rspack/crates/rspack_core/src/compiler/compilation.rs:1722
+20: <rspack_binding_values[dd6eb0f700035f1f]::compilation::JsCompilation>::add_runtime_module
+    at /Users/bytedance/github/rspack/crates/rspack_binding_values/src/compilation/mod.rs:545
+21: rspack_binding_values[dd6eb0f700035f1f]::compilation::__napi_impl_helper__JsCompilation__4::__napi__add_runtime_module::{closure#0}::{closure#0}
+    at /Users/bytedance/github/rspack/crates/rspack_binding_values/src/compilation/mod.rs:57
+22: napi_h[8f17dcce4407366e]::tokio_runtime::within_runtime_if_available::<rspack_binding_values[dd6eb0f700035f1f]::compilation::__napi_impl_helper__JsCompilation__4::__napi__add_runtime_module::{closure#0}::{closure#0}, core[daf78ba8078343d]::result::Result<*mut napi_sys[9499b1a5f0b5c89f]::types::napi_value__, napi_h[8f17dcce4407366e]::error::Error>>
+    at /Users/bytedance/.cargo/registry/src/index.crates.io-6f17d22bba15001f/napi-h-2.16.1/src/tokio_runtime.rs:89
+23: rspack_binding_values[dd6eb0f700035f1f]::compilation::__napi_impl_helper__JsCompilation__4::__napi__add_runtime_module::{closure#0}
+    at /Users/bytedance/github/rspack/crates/rspack_binding_values/src/compilation/mod.rs:57
+                               ⋮ 1 frame hidden ⋮                               
+25: rspack_binding_values[dd6eb0f700035f1f]::compilation::__napi_impl_helper__JsCompilation__4::__napi__add_runtime_module
+    at /Users/bytedance/github/rspack/crates/rspack_binding_values/src/compilation/mod.rs:57
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+error Command failed.
+Exit code: 1
+Command: /Users/bytedance/Library/Application Support/fnm/node-versions/v22.7.0/installation/bin/node
+Arguments: /Users/bytedance/.cache/node/corepack/v1/yarn/1.22.21/lib/cli.js build:fast
+Directory: /Users/bytedance/project/docusaurus/website
+Output:
+
+info Visit https://yarnpkg.com/en/docs/cli/workspace for documentation about this command.
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

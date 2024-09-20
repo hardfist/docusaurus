@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import Rspack from '@rspack/core';
+import Rspack from '/Users/bytedance/github/rspack/packages/rspack';
 import type {RuleSetRule} from 'webpack';
 import type {JsMinifyOptions} from '@swc/core';
 

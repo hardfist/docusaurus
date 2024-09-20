@@ -52,17 +52,19 @@ async function createBaseClientConfig({
     // Useless, disabled on purpose (errors on existing sites with no
     // browserslist config)
     // target: 'browserslist',
+    name:'client',
     entry: path.resolve(__dirname, '../client/clientEntry.js'),
     optimization: {
       // Keep the runtime chunk separated to enable long term caching
       // https://twitter.com/wSokra/status/969679223278505985
-      runtimeChunk: true,
+      runtimeChunk: false,
+      minimize:false,
     },
     plugins: [
       new configureWebpackUtils.currentBundler.instance.DefinePlugin({
         'process.env.HYDRATE_CLIENT_ENTRY': JSON.stringify(hydrate),
       }),
-      new ChunkAssetPlugin(),
+      new ChunkAssetPlugin() as any,
       // Show compilation progress bar and build time.
       new ProgressBarPlugin({
         name: 'Client',
@@ -110,16 +112,16 @@ export async function createStartClientConfig({
       },
       plugins: [
         // Generates an `index.html` file with the <script> injected.
-        new HtmlWebpackPlugin({
-          template: path.join(__dirname, '../templates/dev.html.template.ejs'),
-          // So we can define the position where the scripts are injected.
-          inject: false,
-          filename: 'index.html',
-          title: siteConfig.title,
-          headTags,
-          preBodyTags,
-          postBodyTags,
-        }),
+        // new HtmlWebpackPlugin({
+        //   template: path.join(__dirname, '../templates/dev.html.template.ejs'),
+        //   // So we can define the position where the scripts are injected.
+        //   inject: false,
+        //   filename: 'index.html',
+        //   title: siteConfig.title,
+        //   headTags,
+        //   preBodyTags,
+        //   postBodyTags,
+        // }),
       ],
     },
   );
